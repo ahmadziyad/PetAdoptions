@@ -2,8 +2,8 @@
   "name": "adoptions-app",
   "version": "1.0.0",
   "scripts": {
-    "build": "chmod +x build.sh && ./build.sh",
-    "start": "java -jar dist/adoptions-0.0.1-SNAPSHOT.jar --server.port=${PORT:-8080}"
+    "build": "echo 'Java Spring Boot app - no build needed for static deployment'",
+    "vercel-build": "echo 'Build completed'"
   },
   "engines": {
     "node": ">=18"

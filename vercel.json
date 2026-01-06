@@ -1,18 +1,24 @@
 {
-  "builds": [
-    {
-      "src": "Dockerfile",
-      "use": "@vercel/static-build"
+  "functions": {
+    "api/info.js": {
+      "runtime": "nodejs18.x"
     }
-  ],
+  },
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/"
+      "dest": "/api/info.js"
     }
   ],
-  "env": {
-    "SPRING_PROFILES_ACTIVE": "production",
-    "PORT": "8080"
-  }
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ]
+    }
+  ]
 }
