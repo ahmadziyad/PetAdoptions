@@ -1,0 +1,11 @@
+{
+  "name": "adoptions-app",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "chmod +x build.sh && ./build.sh",
+    "start": "java -jar dist/adoptions-0.0.1-SNAPSHOT.jar --server.port=${PORT:-8080}"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

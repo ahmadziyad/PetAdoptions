@@ -1,0 +1,18 @@
+{
+  "builds": [
+    {
+      "src": "Dockerfile",
+      "use": "@vercel/static-build"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/"
+    }
+  ],
+  "env": {
+    "SPRING_PROFILES_ACTIVE": "production",
+    "PORT": "8080"
+  }
+}
