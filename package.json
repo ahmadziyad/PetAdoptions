@@ -2,9 +2,10 @@
   "name": "adoptions-app",
   "version": "1.0.0",
   "scripts": {
-    "build": "echo 'Java Spring Boot app - no build needed for static deployment'",
-    "vercel-build": "echo 'Build completed'"
+    "build": "echo 'No build needed - this is an info API'",
+    "start": "echo 'This is a Java Spring Boot app - deploy to Railway/Render instead'"
   },
+  "dependencies": {},
   "engines": {
     "node": ">=18"
   }
